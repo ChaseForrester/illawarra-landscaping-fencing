@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /
+
+# Block admin & tooling
+Disallow: /admin.html
+Disallow: /admin
+Disallow: /firebase-config.js
+Disallow: /admin.js
+Disallow: /firebase-cms.js
+
+Sitemap: https://www.illawarralandscapingandfencing.com.au/sitemap.xml
