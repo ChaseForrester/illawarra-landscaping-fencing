@@ -1,0 +1,88 @@
+:root {
+    --primary: #e68c11;
+    --dark: #121c26;
+    --white: #ffffff;
+    --bg-light: #f7fafc; 
+    --text-muted: #4a5568;
+    --radius: 12px;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Outfit', sans-serif; line-height: 1.6; color: #333; overflow-x: hidden;}
+.container { max-width: 1200px; margin: 0 auto; padding: 0 1.5rem; }
+.section-padding { padding: 5rem 0; }
+.bg-dark { background-color: var(--dark); color: white;}
+.bg-light { background-color: var(--bg-light); }
+.text-center { text-align: center; }
+.text-white { color: white; }
+
+.title { font-size: 2.75rem; margin-bottom: 1rem; color: var(--dark); }
+.badge { display: inline-block; padding: 0.5rem 1rem; background-color: rgba(230,140,17,0.1); color: var(--primary); border-radius: 50px; font-weight: 600; font-size: 0.75rem; margin-bottom: 1rem;}
+.desc { color: var(--text-muted); font-size: 1.125rem; max-width: 700px; margin: 0 auto 3rem; }
+.btn { padding: 1rem 2rem; border-radius: 50px; border: none; font-weight: 600; cursor: pointer; text-decoration: none; display: inline-block; }
+.btn-primary { background: var(--primary); color: var(--white); }
+
+/* Header & Nav */
+.header { padding: 1rem 0; position: sticky; top: 0; background: white; z-index: 1000; box-shadow: 0 2px 10px rgba(0,0,0,0.05); }
+.nav-container { display: flex; justify-content: space-between; align-items: center; }
+.logo { font-size: 1.5rem; font-weight: 700; color: var(--dark); text-decoration: none;}
+.nav-list { display: flex; gap: 2rem; list-style: none;}
+.nav-link { color: var(--dark); text-decoration: none; font-weight: 500; font-size: 1.1rem; transition: color 0.3s;}
+.nav-link:hover { color: var(--primary); }
+
+/* Mobile Hamburger */
+.hamburger { display: none; background: none; border: none; cursor: pointer; z-index: 1001; }
+.hamburger .bar { display: block; width: 25px; height: 3px; margin: 5px auto; background-color: var(--dark); transition: all 0.3s ease-in-out; }
+
+/* Hero */
+.hero { background: var(--dark); color: white; padding: 8rem 0; }
+.hero-title { font-size: 4rem; line-height: 1.1; margin-bottom: 1rem; color: white;}
+.hero-subtitle { font-size: 1.25rem; opacity: 0.9; }
+
+/* Gallery */
+.gallery-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 1.5rem; }
+.gallery-item { border-radius: var(--radius); overflow: hidden; height: 250px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+.gallery-item img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease; }
+.gallery-item:hover img { transform: scale(1.05); }
+
+/* Blog */
+.blog-layout { display: flex; flex-direction: column; gap: 3rem; }
+.blog-post { background: white; padding: 2.5rem; border-radius: var(--radius); box-shadow: 0 10px 25px rgba(0,0,0,0.05); }
+.blog-post h3 { color: var(--primary); font-size: 1.75rem; margin-bottom: 1.5rem; }
+.blog-content p { margin-bottom: 1rem; font-size: 1.1rem; color: var(--text-muted); line-height: 1.8; }
+.blog-content p:last-child { margin-bottom: 0; }
+
+.footer { padding: 2rem 0; }
+
+/* Responsive & Mobile Nav Fix */
+@media (max-width: 768px) {
+    .hamburger { display: block; }
+    
+    /* When hamburger is active, turn it into an X */
+    .hamburger.active .bar:nth-child(2) { opacity: 0; }
+    .hamburger.active .bar:nth-child(1) { transform: translateY(8px) rotate(45deg); }
+    .hamburger.active .bar:nth-child(3) { transform: translateY(-8px) rotate(-45deg); }
+
+    /* Fixed Mobile Nav Overlay */
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 70px; /* Below the header */
+        flex-direction: column;
+        background-color: white;
+        width: 100%;
+        height: calc(100vh - 70px); /* Fill screen below header */
+        text-align: center;
+        transition: 0.3s;
+        box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+        display: flex;
+        justify-content: flex-start; /* Align items to top */
+        padding-top: 2rem;
+    }
+
+    .nav-menu.active { left: 0; } /* Slide in */
+    .nav-list { flex-direction: column; gap: 2rem; }
+    .nav-link { font-size: 1.5rem; }
+    
+    .hero-title { font-size: 2.5rem; }
+    .title { font-size: 2rem; }
+}
