@@ -3,8 +3,8 @@
    ========================================= */
 :root {
     /* ── Brand Orange ── */
-    --primary: #E8930D;
-    --primary-dark: #C97B09;
+    --primary: #E68C10;
+    --primary-dark: #C4780C;
     --primary-light: #FEF3E0;
     --primary-mid: #F5A623;
 
@@ -225,9 +225,9 @@ ul {
 }
 
 .logo-img {
-    height: 48px;
+    height: 52px;
     width: auto;
-    max-width: 100%;
+    max-width: min(280px, 52vw);
     display: block;
     object-fit: contain;
 }
@@ -898,9 +898,11 @@ ul {
 .footer-logo-img {
     height: 56px;
     width: auto;
+    max-width: 260px;
     display: block;
-    opacity: 0.92;
+    opacity: 0.96;
     transition: var(--transition);
+    object-fit: contain;
 }
 
 .footer-logo-img:hover {
