@@ -3,127 +3,808 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Illawarra Landscaping & Fencing | Wollongong, Shellharbour</title>
-    <meta name="description" content="Expert landscaping and fencing services in the Illawarra region. Read our in-depth research and view our extensive project gallery.">
-    
+    <title>Illawarra Landscaping & Fencing | Wollongong, Shellharbour, Kiama</title>
+    <meta name="description" content="Expert landscaping and fencing services across the Illawarra region. Retaining walls, garden design, turf, decking and more in Wollongong, Shellharbour & Kiama.">
+    <link rel="icon" type="image/svg+xml" href="images/logo-icon.svg">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Illawarra Landscaping & Fencing">
+    <meta property="og:description" content="Premium landscaping, fencing & garden design across the Illawarra. Free quotes.">
+    <meta property="og:image" content="https://www.illawarralandscapingandfencing.com.au/images/meta-share.png">
+    <meta property="og:url" content="https://www.illawarralandscapingandfencing.com.au">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-    <!-- Navigation -->
-    <header class="header">
-        <div class="container nav-container">
-            <a href="#" class="logo" data-aos="fade-right">Illawarra Gardens & Fencing</a>
-            
-            <nav class="nav-menu" id="navMenu">
-                <ul class="nav-list">
-                    <li><a href="#home" class="nav-link">Home</a></li>
-                    <li><a href="#blog" class="nav-link">Research & Blogs</a></li>
-                    <li><a href="#gallery" class="nav-link">Our Work Gallery</a></li>
+<!-- ── HEADER ──────────────────────────────────────── -->
+<header class="header" id="mainHeader">
+    <div class="container nav-container">
+        <a href="#home" class="logo">
+            <img src="images/logo-full.svg" alt="Illawarra Landscaping & Fencing" class="logo-img">
+        </a>
+
+        <nav class="nav-menu" id="navMenu">
+            <ul class="nav-list">
+                <li><a href="#home"     class="nav-link">Home</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#gallery"  class="nav-link">Gallery</a></li>
+                <li><a href="#blog"     class="nav-link">Blog</a></li>
+                <li><a href="#contact"  class="nav-link nav-cta">Get a Quote</a></li>
+            </ul>
+        </nav>
+
+        <div class="header-phone">
+            <a href="tel:0456299538" class="phone-link">
+                <svg class="phone-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 2.18h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 9.91a16 16 0 0 0 6 6l.91-.91a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                <span id="dynPhoneNumber">0456 299 538</span>
+            </a>
+        </div>
+
+        <button class="hamburger" id="hamburger" aria-label="Open menu">
+            <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+        </button>
+    </div>
+</header>
+
+<main>
+
+<!-- ── HERO ─────────────────────────────────────────── -->
+<section id="home" class="hero">
+    <!-- Slideshow -->
+    <div class="hero-slides" id="heroSlides">
+        <div class="hero-slide active" style="background-image:url('images/4.webp')"></div>
+        <div class="hero-slide" style="background-image:url('images/1.webp')"></div>
+        <div class="hero-slide" style="background-image:url('images/3.webp')"></div>
+        <div class="hero-slide" style="background-image:url('images/6.webp')"></div>
+        <div class="hero-slide" style="background-image:url('images/7.webp')"></div>
+        <div class="hero-slide" style="background-image:url('images/9.webp')"></div>
+    </div>
+
+    <!--
+    ════════════════════════════════════════════════
+     YOUTUBE VIDEO BACKGROUND (optional)
+     Replace YOUR_VIDEO_ID with your YouTube video ID
+    ════════════════════════════════════════════════
+    <div class="hero-yt-wrap">
+      <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID?autoplay=1&mute=1&loop=1&controls=0&playlist=YOUR_VIDEO_ID&showinfo=0&rel=0&modestbranding=1"
+        allow="autoplay; fullscreen" frameborder="0"></iframe>
+    </div>
+    -->
+
+    <div class="hero-particles" id="heroParticles"></div>
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content" id="heroContent">
+        <!-- LEFT: Text -->
+        <div class="hero-text-box" id="heroTextBox">
+            <span class="hero-eyebrow gsap-hero-1">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14H9V8h2v8zm4 0h-2V8h2v8z"/></svg>
+                Illawarra's Trusted Landscapers
+            </span>
+            <h1 class="hero-title gsap-hero-2" id="dynHeroTitle">
+                Let us bring life<br>to your <span class="accent">garden</span>
+            </h1>
+            <p class="hero-subtitle gsap-hero-3" id="dynHeroSubtitle">
+                Premium landscaping, fencing & garden design across<br>Wollongong, Shellharbour & Kiama.
+            </p>
+            <div class="hero-buttons gsap-hero-4">
+                <a href="#contact" class="btn btn-green">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+                    Get in touch
+                </a>
+                <a href="#services" class="btn btn-outline-white">Browse services →</a>
+            </div>
+            <div class="hero-stats gsap-hero-5">
+                <div class="stat">
+                    <strong class="counter" data-target="10">0</strong><span class="stat-plus">+</span>
+                    <span>Years Experience</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <strong class="counter" data-target="500">0</strong><span class="stat-plus">+</span>
+                    <span>Projects Completed</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <strong class="counter" data-target="100">0</strong><span class="stat-plus">%</span>
+                    <span>Satisfaction Guarantee</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- RIGHT: Quick quote card with photo upload -->
+        <div class="hero-card" id="heroCard">
+            <h3>Get a Custom Quote</h3>
+            <p>Tell us about your project — attach a photo for a faster response.</p>
+
+            <form id="heroQuoteForm" novalidate>
+                <!-- Photo upload -->
+                <div class="upload-zone" id="uploadZone">
+                    <input type="file" id="heroPhotoUpload" accept="image/*" multiple>
+                    <svg class="upload-icon" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polyline points="16 16 12 12 8 16"/><line x1="12" y1="12" x2="12" y2="21"/><path d="M20.39 18.39A5 5 0 0 0 18 9h-1.26A8 8 0 1 0 3 16.3"/></svg>
+                    <span>Drag & drop your photos here</span>
+                    <strong>or click to browse</strong>
+                    <div class="upload-preview" id="uploadPreview"></div>
+                </div>
+
+                <div class="form-group">
+                    <input type="text" id="hqName" placeholder="Your name" required>
+                </div>
+                <div class="form-group">
+                    <input type="tel" id="hqPhone" placeholder="Phone number" required>
+                </div>
+                <div class="form-group">
+                    <select id="hqService" required>
+                        <option value="" disabled selected>Select service...</option>
+                        <option>Garden Design & Landscaping</option>
+                        <option>Retaining Walls</option>
+                        <option>Fencing</option>
+                        <option>Turf & Lawn</option>
+                        <option>Decking & Pergolas</option>
+                        <option>Garden Maintenance</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-orange">
+                    Request Quote →
+                </button>
+                <p class="form-note">We'll call you within 24 hours. No obligation.</p>
+            </form>
+        </div>
+    </div>
+
+    <div class="slide-dots" id="slideDots"></div>
+    <div class="hero-scroll">
+        <span class="scroll-text">Scroll</span>
+        <div class="scroll-line"></div>
+    </div>
+</section>
+
+<!-- ── SERVICES ──────────────────────────────────────── -->
+<section id="services" class="services section-padding">
+    <div class="container">
+        <div class="section-header text-center" data-aos="fade-up">
+            <span class="badge badge-dark">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-9l6 4.5-6 4.5z"/></svg>
+                What We Do
+            </span>
+            <h2 class="title">Our Services</h2>
+            <p class="desc">From concept to completion — every aspect of your outdoor transformation.</p>
+        </div>
+
+        <div class="services-grid-new">
+
+            <a href="#contact" class="service-card-new gsap-from-below">
+                <img src="images/1.webp" alt="Privacy & Screening" loading="lazy">
+                <div class="service-overlay-new">
+                    <div class="service-info-new">
+                        <h3>Privacy & Screening</h3>
+                        <p>Create instant privacy and natural boundaries</p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#contact" class="service-card-new gsap-from-below">
+                <img src="images/6.webp" alt="Fast Growing Plants" loading="lazy">
+                <div class="service-overlay-new">
+                    <div class="service-info-new">
+                        <h3>Fast Growing Plants</h3>
+                        <p>Quick coverage and rapid impact</p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#contact" class="service-card-new gsap-from-below">
+                <img src="images/7.webp" alt="Feature Trees" loading="lazy">
+                <div class="service-overlay-new">
+                    <div class="service-info-new">
+                        <h3>Feature Trees</h3>
+                        <p>Statement trees with visual impact</p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#contact" class="service-card-new gsap-from-below">
+                <img src="images/3.webp" alt="Flowering Plants" loading="lazy">
+                <div class="service-overlay-new">
+                    <div class="service-info-new">
+                        <h3>Flowering Plants</h3>
+                        <p>Seasonal colour and standout blooms</p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#contact" class="service-card-new gsap-from-below">
+                <img src="images/9.webp" alt="Fruit Trees" loading="lazy">
+                <div class="service-overlay-new">
+                    <div class="service-info-new">
+                        <h3>Fruit Trees</h3>
+                        <p>Grow fresh fruit at home</p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#contact" class="service-card-new gsap-from-below">
+                <img src="images/4.webp" alt="Indoor Plants" loading="lazy">
+                <div class="service-overlay-new">
+                    <div class="service-info-new">
+                        <h3>Indoor Plants</h3>
+                        <p>Bring greenery into your home</p>
+                    </div>
+                </div>
+            </a>
+
+        </div>
+
+        <div class="services-cta text-center" data-aos="fade-up">
+            <p>Not sure what you need? We offer <strong>free on-site quotes</strong> across the Illawarra region.</p>
+            <a href="#contact" class="btn btn-green">Book Your Free Quote</a>
+        </div>
+    </div>
+</section>
+
+<!-- ── GALLERY ────────────────────────────────────────── -->
+<section id="gallery" class="gallery section-padding bg-dark-section">
+    <div class="container">
+        <div class="section-header text-center" data-aos="fade-up">
+            <span class="badge badge-orange">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+                Our Work
+            </span>
+            <h2 class="title title-light">Recent Projects</h2>
+            <p class="desc desc-light">Transformations we've delivered across the Illawarra.</p>
+        </div>
+
+        <div class="gallery-grid">
+            <div class="gallery-item gallery-large gsap-from-left">
+                <img src="assets/images/projects/Back Fence with Retainer wall.jpeg" loading="lazy" alt="Retaining Wall and Back Fence">
+                <div class="gallery-overlay"><span class="gallery-label">Retaining Wall & Fence</span></div>
+            </div>
+            <div class="gallery-item gsap-from-right">
+                <img src="assets/images/projects/Fireplace Before.jpeg" loading="lazy" alt="Fireplace Before">
+                <div class="gallery-overlay"><span class="gallery-label">Fireplace - Before</span></div>
+            </div>
+            <div class="gallery-item gsap-from-right">
+                <img src="assets/images/projects/Fireplace After.jpeg" loading="lazy" alt="Fireplace After">
+                <div class="gallery-overlay"><span class="gallery-label">Fireplace - After</span></div>
+            </div>
+            <div class="gallery-item gallery-tall gsap-from-left">
+                <img src="assets/images/projects/Deck Completed.jpeg" loading="lazy" alt="Completed Deck">
+                <div class="gallery-overlay"><span class="gallery-label">Premium Decking</span></div>
+            </div>
+            <div class="gallery-item gsap-from-right">
+                <img src="assets/images/projects/Concrete Fence.jpeg" loading="lazy" alt="Concrete Fencing">
+                <div class="gallery-overlay"><span class="gallery-label">Concrete Fencing</span></div>
+            </div>
+            <div class="gallery-item gsap-from-right">
+                <img src="assets/images/projects/Garden Bed.jpeg" loading="lazy" alt="Garden Bed Construction">
+                <div class="gallery-overlay"><span class="gallery-label">Garden Bed Construction</span></div>
+            </div>
+        </div>
+
+        <div class="text-center" data-aos="fade-up" style="margin-top:2.5rem;">
+            <a href="#contact" class="btn btn-orange">Start Your Project →</a>
+        </div>
+    </div>
+</section>
+
+<!-- ── WHY US ──────────────────────────────────────────── -->
+<section id="why-us" class="why-us section-padding">
+    <div class="container">
+        <div class="why-us-grid">
+            <div class="why-us-content gsap-from-left">
+                <span class="badge">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                    Why Choose Us
+                </span>
+                <h2 class="title" id="dynScienceTitle">Local Experts.<br>Exceptional Results.</h2>
+                <p class="why-desc" id="dynScienceDesc">We're a locally owned business that genuinely cares about the Illawarra community. When you hire us, you're getting a team that takes pride in every single project.</p>
+
+                <div class="features-list">
+                    <div class="feature-item">
+                        <div class="feature-icon-wrap">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                        </div>
+                        <div>
+                            <h4>Fully Licensed & Insured</h4>
+                            <p>Complete peace of mind on every job, large or small.</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon-wrap">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                        </div>
+                        <div>
+                            <h4>Locally Owned & Operated</h4>
+                            <p>Based in Wollongong, serving the whole Illawarra region.</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon-wrap">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                        </div>
+                        <div>
+                            <h4>5-Star Workmanship</h4>
+                            <p>We don't cut corners. Every project finished to the highest standard.</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon-wrap">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+                        </div>
+                        <div>
+                            <h4>Clear Communication</h4>
+                            <p>We keep you informed every step of the way — no surprises.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="why-us-image gsap-from-right">
+                <img src="https://images.unsplash.com/photo-1598902108854-10e335adac99?w=800&q=80" alt="Quality landscaping work Illawarra">
+                <div class="image-badge">
+                    <span class="image-badge-num">500+</span>
+                    <span class="image-badge-text">Happy Clients</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ── BLOG ───────────────────────────────────────────── -->
+<section id="blog" class="blog section-padding">
+    <div class="container">
+        <div class="section-header text-center" data-aos="fade-up">
+            <span class="badge badge-dark">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+                Tips & Guides
+            </span>
+            <h2 class="title">Landscaping Blog</h2>
+            <p class="desc">Expert advice from the Illawarra's local landscaping team.</p>
+        </div>
+
+        <div class="blog-grid" style="display: flex; flex-direction: column; gap: 2rem;">
+            <!-- Article 1 -->
+            <article class="blog-card gsap-from-left" style="display: block; padding: 2.5rem; width: 100%;">
+                <div class="blog-body" style="padding: 0;">
+                    <span class="blog-date">August 2026</span>
+                    <h3 style="font-size: 1.75rem; margin-bottom: 1rem; color: var(--primary);">The Psychological Impact of Biophilic Design in Residential Spaces</h3>
+                    <p style="margin-bottom: 1rem; font-size: 1.1rem; color: var(--text-muted); line-height: 1.8;">Recent studies in environmental psychology have underscored the profound impact that well-designed green spaces have on mental health. The concept of <strong>Biophilia</strong>—the innate human instinct to connect with nature—is no longer just a design trend, but a scientifically validated method for stress reduction.</p>
+                    <p style="margin-bottom: 1rem; font-size: 1.1rem; color: var(--text-muted); line-height: 1.8;">Research conducted over the last decade shows that exposure to natural landscapes, even within the confines of a residential backyard, can significantly lower cortisol levels (the primary stress hormone). A well-structured garden featuring native Illawarra flora doesn't just look beautiful; it actively works to lower blood pressure, reduce anxiety, and improve cognitive function.</p>
+                    <p style="margin-bottom: 0; font-size: 1.1rem; color: var(--text-muted); line-height: 1.8;">For homeowners in Wollongong and Shellharbour, investing in a professional landscape design is an investment in daily mental well-being. By incorporating sensory elements like moving water, textured native grasses, and aromatic plants, we create an environment that encourages mindfulness and relaxation right at your doorstep.</p>
+                </div>
+            </article>
+
+            <!-- Article 2 -->
+            <article class="blog-card" data-aos="fade-up" style="display: block; padding: 2.5rem; width: 100%;">
+                <div class="blog-body" style="padding: 0;">
+                    <span class="blog-date">July 2026</span>
+                    <h3 style="font-size: 1.75rem; margin-bottom: 1rem; color: var(--primary);">Retaining Walls & Erosion Control: Engineering for the Coastal Climate</h3>
+                    <p style="margin-bottom: 1rem; font-size: 1.1rem; color: var(--text-muted); line-height: 1.8;">The Illawarra region is characterized by its stunning escarpment and beautiful coastline, but this unique geography brings specific challenges, particularly regarding soil erosion and water runoff. A professionally constructed retaining wall is far more than an aesthetic feature; it is a critical piece of structural engineering designed to protect your property.</p>
+                    <p style="margin-bottom: 1rem; font-size: 1.1rem; color: var(--text-muted); line-height: 1.8;">Effective erosion control involves understanding the soil composition and the hydrodynamic flow of water during heavy coastal downpours. By utilizing materials like reinforced concrete, treated timber, or interlocking stone blocks, a retaining wall redistributes the lateral pressure of sloping ground. This prevents landslides, protects foundations, and creates usable, terraced flat land out of steep gradients.</p>
+                    <p style="margin-bottom: 0; font-size: 1.1rem; color: var(--text-muted); line-height: 1.8;">Furthermore, proper drainage systems (such as agricultural drains positioned behind the wall) are essential. Without them, hydrostatic pressure can build up and compromise the structural integrity of the wall. Our projects strictly adhere to Australian engineering standards to ensure longevity and safety against the dynamic coastal weather patterns.</p>
+                </div>
+            </article>
+
+            <!-- Article 3 -->
+            <article class="blog-card gsap-from-right" style="display: block; padding: 2.5rem; width: 100%;">
+                <div class="blog-body" style="padding: 0;">
+                    <span class="blog-date">June 2026</span>
+                    <h3 style="font-size: 1.75rem; margin-bottom: 1rem; color: var(--primary);">Drought-Resistant Native Flora: Sustainable Landscaping in NSW</h3>
+                    <p style="margin-bottom: 1rem; font-size: 1.1rem; color: var(--text-muted); line-height: 1.8;">As climate conditions become increasingly unpredictable, sustainable landscaping practices have never been more vital. In New South Wales, utilizing drought-resistant native plants is the cornerstone of an environmentally responsible and low-maintenance garden.</p>
+                    <p style="margin-bottom: 1rem; font-size: 1.1rem; color: var(--text-muted); line-height: 1.8;">Native plants such as the <em>Banksia</em>, <em>Grevillea</em>, and <em>Lomandra</em> have evolved over millennia to thrive in the specific soil and climate conditions of the Illawarra. Unlike exotic species, these plants have deep root systems that seek out subterranean moisture, significantly reducing the need for artificial irrigation. This not only conserves precious water resources but also lowers maintenance costs for the homeowner.</p>
+                    <p style="margin-bottom: 0; font-size: 1.1rem; color: var(--text-muted); line-height: 1.8;">Moreover, native gardens play a crucial role in supporting local biodiversity. They provide essential habitats and food sources for native birds, bees, and insects. By choosing a native landscape design, you are actively contributing to the ecological health of the region while enjoying a vibrant, resilient garden that looks spectacular year-round.</p>
+                </div>
+            </article>
+        </div>
+    </div>
+</section>
+
+<!-- ── SERVICE AREAS ───────────────────────────────────── -->
+<section class="areas section-padding bg-white">
+    <div class="container">
+        <div class="section-header text-center" data-aos="fade-up">
+            <span class="badge">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                Where We Work
+            </span>
+            <h2 class="title">Service Areas</h2>
+            <p class="desc">Proudly servicing the entire Illawarra region and surrounds.</p>
+        </div>
+        <div class="areas-grid" data-aos="fade-up">
+            <div class="area-pill">Wollongong</div>
+            <div class="area-pill">Shellharbour</div>
+            <div class="area-pill">Kiama</div>
+            <div class="area-pill">Dapto</div>
+            <div class="area-pill">Albion Park</div>
+            <div class="area-pill">Fairy Meadow</div>
+            <div class="area-pill">Thirroul</div>
+            <div class="area-pill">Corrimal</div>
+            <div class="area-pill">Unanderra</div>
+            <div class="area-pill">Oak Flats</div>
+            <div class="area-pill">Figtree</div>
+            <div class="area-pill">Berkeley</div>
+            <div class="area-pill">Port Kembla</div>
+            <div class="area-pill">+ Surrounds</div>
+        </div>
+    </div>
+</section>
+
+<!-- ── CONTACT — MULTI-STEP FORM ──────────────────────── -->
+<section id="contact" class="contact section-padding bg-dark">
+    <div class="container">
+        <div class="contact-grid">
+            <div class="contact-info gsap-from-left">
+                <span class="badge badge-light">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+                    Get In Touch
+                </span>
+                <h2 class="title title-light">Ready to Transform<br>Your Space?</h2>
+                <p class="contact-desc">Walk us through your project in three quick steps and we'll come back with a free, no-obligation quote.</p>
+
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <div class="contact-icon-wrap">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 2.18h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 9.91a16 16 0 0 0 6 6l.91-.91a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                        </div>
+                        <div>
+                            <strong>Call Us</strong>
+                            <a href="tel:0456299538" id="dynPhoneNumber2">0456 299 538</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon-wrap">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                        </div>
+                        <div>
+                            <strong>Email Us</strong>
+                            <a href="mailto:illawarralandscapingandfencing@hotmail.com">illawarralandscapingandfencing@hotmail.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon-wrap">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                        </div>
+                        <div>
+                            <strong>Service Area</strong>
+                            <span>Illawarra Region, NSW</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Multi-step form -->
+            <div class="contact-form-wrap gsap-from-right" id="contactFormWrap">
+                <div id="multiFormAlert" class="form-alert" style="display:none;"></div>
+
+                <!-- Step progress -->
+                <div class="step-progress">
+                    <div class="step-dot active" id="dot1">1</div>
+                    <div class="step-line" id="line1"></div>
+                    <div class="step-dot" id="dot2">2</div>
+                    <div class="step-line" id="line2"></div>
+                    <div class="step-dot" id="dot3">3</div>
+                </div>
+
+                <!-- Step 1: Service selection -->
+                <div class="step-panel active" id="step1">
+                    <div class="step-title">What can we help you with?</div>
+                    <div class="step-desc">Select one or more services — we'll tailor your quote accordingly.</div>
+
+                    <div class="service-tiles" id="serviceTiles">
+                        <div class="service-tile" data-service="Garden Design">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 22V12M12 12C12 12 6 10 6 4c0 0 3 2 6 2s6-2 6-2c0 6-6 8-6 8z"/></svg>
+                            Garden Design
+                        </div>
+                        <div class="service-tile" data-service="Retaining Walls">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="8" width="20" height="6" rx="1"/><rect x="2" y="14" width="20" height="4" rx="1"/></svg>
+                            Retaining Walls
+                        </div>
+                        <div class="service-tile" data-service="Fencing">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><line x1="4" y1="5" x2="4" y2="19"/><line x1="8" y1="5" x2="8" y2="19"/><line x1="4" y1="8" x2="8" y2="8"/><line x1="4" y1="15" x2="8" y2="15"/><line x1="14" y1="5" x2="14" y2="19"/><line x1="18" y1="5" x2="18" y2="19"/><line x1="14" y1="8" x2="18" y2="8"/><line x1="14" y1="15" x2="18" y2="15"/></svg>
+                            Fencing
+                        </div>
+                        <div class="service-tile" data-service="Turf & Lawn">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 17l4-8 4 4 3-6 4 10"/><path d="M3 21h18"/></svg>
+                            Turf & Lawn
+                        </div>
+                        <div class="service-tile" data-service="Decking">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
+                            Decking
+                        </div>
+                        <div class="service-tile" data-service="Maintenance">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="3"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14M4.93 4.93a10 10 0 0 0 0 14.14"/></svg>
+                            Maintenance
+                        </div>
+                    </div>
+                    <div class="step-nav">
+                        <button class="btn-step-next" onclick="goToStep(2)">Next: Project Details →</button>
+                    </div>
+                </div>
+
+                <!-- Step 2: Project details + photo -->
+                <div class="step-panel" id="step2">
+                    <div class="step-title">Tell us about your project</div>
+                    <div class="step-desc">A photo or description helps us give you a more accurate quote.</div>
+
+                    <div class="upload-zone" id="uploadZone2">
+                        <input type="file" id="contactPhotoUpload" accept="image/*" multiple>
+                        <svg class="upload-icon" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polyline points="16 16 12 12 8 16"/><line x1="12" y1="12" x2="12" y2="21"/><path d="M20.39 18.39A5 5 0 0 0 18 9h-1.26A8 8 0 1 0 3 16.3"/></svg>
+                        <span>Upload photos of your space</span>
+                        <strong>Click to browse or drag & drop</strong>
+                        <div class="upload-preview" id="uploadPreview2"></div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="s2Suburb">Suburb / Area *</label>
+                        <input type="text" id="s2Suburb" placeholder="e.g. Wollongong">
+                    </div>
+                    <div class="form-group">
+                        <label for="s2Message">Describe your project</label>
+                        <textarea id="s2Message" rows="3" placeholder="Size of the area, any specific requirements, timeline..."></textarea>
+                    </div>
+                    <div class="step-nav">
+                        <button class="btn-step-back" onclick="goToStep(1)">← Back</button>
+                        <button class="btn-step-next" onclick="goToStep(3)">Next: Your Details →</button>
+                    </div>
+                </div>
+
+                <!-- Step 3: Contact details -->
+                <div class="step-panel" id="step3">
+                    <div class="step-title">How can we reach you?</div>
+                    <div class="step-desc">We'll call or email within 24 hours with your free quote.</div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="s3Name">Full Name *</label>
+                            <input type="text" id="s3Name" placeholder="e.g. John Smith" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="s3Phone">Phone *</label>
+                            <input type="tel" id="s3Phone" placeholder="0412 345 678" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="s3Email">Email Address *</label>
+                        <input type="email" id="s3Email" placeholder="your@email.com" required>
+                    </div>
+                    <div class="form-group" style="margin-top:0.25rem;">
+                        <label style="display:flex;align-items:center;gap:0.5rem;font-weight:500;cursor:pointer;">
+                            <input type="checkbox" id="s3Updates" style="width:auto;padding:0;background:none;border:1.5px solid var(--border);accent-color:var(--green);">
+                            Keep me updated with landscaping tips & specials
+                        </label>
+                    </div>
+
+                    <div class="step-nav">
+                        <button class="btn-step-back" onclick="goToStep(2)">← Back</button>
+                        <button class="btn-step-next" id="submitFinalBtn" onclick="submitMultiForm()">
+                            <span id="finalBtnText">Submit My Quote Request ↗</span>
+                        </button>
+                    </div>
+                    <p class="form-note" style="margin-top:0.75rem;">🔒 Your information is secure. No spam, ever.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+</main>
+
+<!-- ── FOOTER ──────────────────────────────────────────── -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <a href="#home">
+                    <img src="images/logo-white.svg" alt="Illawarra Landscaping & Fencing" class="footer-logo-img">
+                </a>
+                <p>Transforming outdoor spaces across the Illawarra since 2014.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Services</h4>
+                <ul>
+                    <li><a href="#services">Garden Design</a></li>
+                    <li><a href="#services">Retaining Walls</a></li>
+                    <li><a href="#services">Fencing</a></li>
+                    <li><a href="#services">Turf & Lawn</a></li>
+                    <li><a href="#services">Decking & Pergolas</a></li>
                 </ul>
-            </nav>
-
-            <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </button>
+            </div>
+            <div class="footer-links">
+                <h4>Blog</h4>
+                <ul>
+                    <li><a href="blog/retaining-walls.html">Retaining Wall Guide</a></li>
+                    <li><a href="blog/fencing-guide.html">Fencing Guide</a></li>
+                    <li><a href="blog/lawn-care-tips.html">Lawn Care Tips</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Contact</h4>
+                <p><a href="tel:0456299538">0456 299 538</a></p>
+                <p><a href="mailto:illawarralandscapingandfencing@hotmail.com">illawarralandscapingandfencing@hotmail.com</a></p>
+                <p>Wollongong, NSW</p>
+            </div>
         </div>
-    </header>
-
-    <main>
-        <!-- Hero Section -->
-        <section id="home" class="hero section-padding">
-            <div class="container text-center">
-                <h1 class="hero-title" data-aos="fade-up">Premium Landscaping in the Illawarra</h1>
-                <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="100">Specializing in fencing, decking, and complete garden transformations.</p>
-            </div>
-        </section>
-
-        <!-- Our Work Gallery Section -->
-        <section id="gallery" class="gallery section-padding bg-light">
-            <div class="container">
-                <div class="section-header text-center" data-aos="fade-up">
-                    <span class="badge">PORTFOLIO</span>
-                    <h2 class="title">Our Recent Projects</h2>
-                    <p class="desc">Browse our before and after shots of fences, retaining walls, decks, and concreting jobs across the Illawarra.</p>
-                </div>
-                
-                <div class="gallery-grid">
-                    <div class="gallery-item" data-aos="zoom-in"><img src="assets/images/projects/Back Fence with Retainer wall.jpeg" alt="Back Fence with Retainer wall"></div>
-                    <div class="gallery-item" data-aos="zoom-in" data-aos-delay="100"><img src="assets/images/projects/COncreting Complete.jpeg" alt="Concreting Complete"></div>
-                    <div class="gallery-item" data-aos="zoom-in" data-aos-delay="200"><img src="assets/images/projects/Concrete Fence.jpeg" alt="Concrete Fence"></div>
-                    <div class="gallery-item" data-aos="zoom-in"><img src="assets/images/projects/Concreting.jpeg" alt="Concreting"></div>
-                    <div class="gallery-item" data-aos="zoom-in" data-aos-delay="100"><img src="assets/images/projects/Deck Completed.jpeg" alt="Deck Completed"></div>
-                    <div class="gallery-item" data-aos="zoom-in" data-aos-delay="200"><img src="assets/images/projects/Deck.jpeg" alt="Deck"></div>
-                    <div class="gallery-item" data-aos="zoom-in"><img src="assets/images/projects/Fence 2.jpeg" alt="Fence 2"></div>
-                    <div class="gallery-item" data-aos="zoom-in" data-aos-delay="100"><img src="assets/images/projects/Fence with Truck.jpeg" alt="Fence with Truck"></div>
-                    <div class="gallery-item" data-aos="zoom-in" data-aos-delay="200"><img src="assets/images/projects/Fence.jpeg" alt="Fence"></div>
-                    <div class="gallery-item" data-aos="zoom-in"><img src="assets/images/projects/Fireplace Before.jpeg" alt="Fireplace Before"></div>
-                    <div class="gallery-item" data-aos="zoom-in" data-aos-delay="100"><img src="assets/images/projects/Fireplace After.jpeg" alt="Fireplace After"></div>
-                    <div class="gallery-item" data-aos="zoom-in" data-aos-delay="200"><img src="assets/images/projects/Front Fence 3.jpeg" alt="Front Fence 3"></div>
-                    <div class="gallery-item" data-aos="zoom-in"><img src="assets/images/projects/Garden Bed.jpeg" alt="Garden Bed"></div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Expanded Blog & Research Section -->
-        <section id="blog" class="blog section-padding">
-            <div class="container">
-                <div class="section-header text-center" data-aos="fade-up">
-                    <span class="badge">RESEARCH & ARTICLES</span>
-                    <h2 class="title">The Science of Landscaping</h2>
-                    <p class="desc">Deep dives into the environmental, structural, and psychological benefits of professional landscaping in coastal climates.</p>
-                </div>
-
-                <div class="blog-layout">
-                    <!-- Article 1 -->
-                    <article class="blog-post" data-aos="fade-up">
-                        <h3>1. The Psychological Impact of Biophilic Design in Residential Spaces</h3>
-                        <div class="blog-content">
-                            <p>Recent studies in environmental psychology have underscored the profound impact that well-designed green spaces have on mental health. The concept of <strong>Biophilia</strong>—the innate human instinct to connect with nature—is no longer just a design trend, but a scientifically validated method for stress reduction.</p>
-                            <p>Research conducted over the last decade shows that exposure to natural landscapes, even within the confines of a residential backyard, can significantly lower cortisol levels (the primary stress hormone). A well-structured garden featuring native Illawarra flora doesn't just look beautiful; it actively works to lower blood pressure, reduce anxiety, and improve cognitive function.</p>
-                            <p>For homeowners in Wollongong and Shellharbour, investing in a professional landscape design is an investment in daily mental well-being. By incorporating sensory elements like moving water, textured native grasses, and aromatic plants, we create an environment that encourages mindfulness and relaxation right at your doorstep.</p>
-                        </div>
-                    </article>
-
-                    <!-- Article 2 -->
-                    <article class="blog-post" data-aos="fade-up">
-                        <h3>2. Retaining Walls & Erosion Control: Engineering for the Coastal Climate</h3>
-                        <div class="blog-content">
-                            <p>The Illawarra region is characterized by its stunning escarpment and beautiful coastline, but this unique geography brings specific challenges, particularly regarding soil erosion and water runoff. A professionally constructed retaining wall is far more than an aesthetic feature; it is a critical piece of structural engineering designed to protect your property.</p>
-                            <p>Effective erosion control involves understanding the soil composition and the hydrodynamic flow of water during heavy coastal downpours. By utilizing materials like reinforced concrete, treated timber, or interlocking stone blocks, a retaining wall redistributes the lateral pressure of sloping ground. This prevents landslides, protects foundations, and creates usable, terraced flat land out of steep gradients.</p>
-                            <p>Furthermore, proper drainage systems (such as agricultural drains positioned behind the wall) are essential. Without them, hydrostatic pressure can build up and compromise the structural integrity of the wall. Our projects strictly adhere to Australian engineering standards to ensure longevity and safety against the dynamic coastal weather patterns.</p>
-                        </div>
-                    </article>
-
-                    <!-- Article 3 -->
-                    <article class="blog-post" data-aos="fade-up">
-                        <h3>3. Drought-Resistant Native Flora: Sustainable Landscaping in NSW</h3>
-                        <div class="blog-content">
-                            <p>As climate conditions become increasingly unpredictable, sustainable landscaping practices have never been more vital. In New South Wales, utilizing drought-resistant native plants is the cornerstone of an environmentally responsible and low-maintenance garden.</p>
-                            <p>Native plants such as the <em>Banksia</em>, <em>Grevillea</em>, and <em>Lomandra</em> have evolved over millennia to thrive in the specific soil and climate conditions of the Illawarra. Unlike exotic species, these plants have deep root systems that seek out subterranean moisture, significantly reducing the need for artificial irrigation. This not only conserves precious water resources but also lowers maintenance costs for the homeowner.</p>
-                            <p>Moreover, native gardens play a crucial role in supporting local biodiversity. They provide essential habitats and food sources for native birds, bees, and insects. By choosing a native landscape design, you are actively contributing to the ecological health of the region while enjoying a vibrant, resilient garden that looks spectacular year-round.</p>
-                        </div>
-                    </article>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer class="footer bg-dark">
-        <div class="container text-center text-white">
-            <p>&copy; 2026 Illawarra Gardens and Fencing. All rights reserved.</p>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Illawarra Landscaping & Fencing. All rights reserved.</p>
+            <a href="/admin.html" class="admin-link">Admin</a>
         </div>
-    </footer>
+    </div>
+</footer>
 
-    <!-- Scripts -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script type="module" src="script.js"></script>
+<!-- Scripts -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<!-- Firebase UMD Compat SDKs -->
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-storage-compat.js"></script>
+<script src="firebase-config.js"></script>
+<script src="script.js"></script>
+
+<!-- Multi-step form + upload logic (inline, no module needed) -->
+<script>
+// ── STEP NAVIGATION ──────────────────────────────────
+let currentStep = 1;
+const selectedServices = new Set();
+
+function goToStep(n) {
+    document.getElementById('step' + currentStep).classList.remove('active');
+    document.getElementById('dot' + currentStep).classList.remove('active');
+    if (n > currentStep) document.getElementById('dot' + currentStep).classList.add('done');
+
+    // Update step lines
+    for (let i = 1; i <= 2; i++) {
+        document.getElementById('line' + i).classList.toggle('done', i < n);
+    }
+    currentStep = n;
+    document.getElementById('step' + n).classList.add('active');
+    document.getElementById('dot' + n).classList.add('active');
+}
+
+// ── SERVICE TILE SELECTION ───────────────────────────
+document.querySelectorAll('.service-tile').forEach(tile => {
+    tile.addEventListener('click', () => {
+        tile.classList.toggle('selected');
+        const svc = tile.dataset.service;
+        selectedServices.has(svc) ? selectedServices.delete(svc) : selectedServices.add(svc);
+    });
+});
+
+// ── PHOTO UPLOAD PREVIEW (hero) ──────────────────────
+setupUpload('heroPhotoUpload', 'uploadPreview');
+setupUpload('contactPhotoUpload', 'uploadPreview2');
+
+function setupUpload(inputId, previewId) {
+    const input   = document.getElementById(inputId);
+    const preview = document.getElementById(previewId);
+    if (!input || !preview) return;
+
+    input.addEventListener('change', () => {
+        preview.style.display = 'flex';
+        preview.innerHTML = '';
+        Array.from(input.files).slice(0, 4).forEach(file => {
+            const reader = new FileReader();
+            reader.onload = e => {
+                const img = document.createElement('img');
+                img.src = e.target.result;
+                preview.appendChild(img);
+            };
+            reader.readAsDataURL(file);
+        });
+    });
+}
+
+// Drag & drop
+document.querySelectorAll('.upload-zone').forEach(zone => {
+    zone.addEventListener('dragover', e => { e.preventDefault(); zone.classList.add('drag-over'); });
+    zone.addEventListener('dragleave', () => zone.classList.remove('drag-over'));
+    zone.addEventListener('drop', e => {
+        e.preventDefault(); zone.classList.remove('drag-over');
+        const inp = zone.querySelector('input[type=file]');
+        if (inp) { inp.files = e.dataTransfer.files; inp.dispatchEvent(new Event('change')); }
+    });
+});
+
+// ── MULTI-STEP SUBMIT ─────────────────────────────────
+async function submitMultiForm() {
+    const name  = document.getElementById('s3Name').value.trim();
+    const phone = document.getElementById('s3Phone').value.trim();
+    const email = document.getElementById('s3Email').value.trim();
+
+    if (!name || !phone || !email) {
+        showMultiAlert('Please fill in your name, phone and email.', 'error'); return;
+    }
+
+    const btn = document.getElementById('submitFinalBtn');
+    document.getElementById('finalBtnText').textContent = 'Sending...';
+    btn.disabled = true;
+
+    try {
+        // Fire-and-forget to Firestore via the module script
+        window._pendingMultiQuote = {
+            name, phone, email,
+            services: Array.from(selectedServices).join(', '),
+            suburb:   document.getElementById('s2Suburb').value.trim(),
+            message:  document.getElementById('s2Message').value.trim(),
+            hasPhotos: document.getElementById('contactPhotoUpload').files.length > 0,
+        };
+        document.dispatchEvent(new CustomEvent('multiQuoteSubmit', { detail: window._pendingMultiQuote }));
+
+        // Send email using FormSubmit AJAX
+        const formData = new FormData();
+        formData.append('Name', name);
+        formData.append('Phone', phone);
+        formData.append('Email', email);
+        formData.append('Services Requested', Array.from(selectedServices).join(', '));
+        formData.append('Suburb', document.getElementById('s2Suburb').value.trim());
+        formData.append('Message', document.getElementById('s2Message').value.trim());
+        formData.append('_cc', 'illawarralandscapingandfencing@hotmail.com,hello@techaidaustralia.com.au');
+        formData.append('_subject', 'New Quote Request - Illawarra Landscaping & Fencing');
+
+        const fileInput = document.getElementById('contactPhotoUpload');
+        if (fileInput && fileInput.files.length > 0) {
+            for (let i = 0; i < fileInput.files.length; i++) {
+                formData.append('attachment', fileInput.files[i]);
+            }
+        }
+
+        const response = await fetch('https://formsubmit.co/ajax/stormychaseforrester@gmail.com', {
+            method: 'POST',
+            body: formData
+        });
+
+        if (!response.ok) {
+            throw new Error('Failed to send email via FormSubmit');
+        }
+
+        showMultiAlert(`Thanks ${name}! We'll be in touch within 24 hours. 🎉`, 'success');
+        setTimeout(() => goToStep(1), 3000);
+    } catch(e) {
+        console.error('Submission error:', e);
+        showMultiAlert('Something went wrong. Please call us on 0456 299 538.', 'error');
+    } finally {
+        document.getElementById('finalBtnText').textContent = 'Submit My Quote Request ↗';
+        btn.disabled = false;
+    }
+}
+
+function showMultiAlert(msg, type) {
+    const a = document.getElementById('multiFormAlert');
+    a.textContent = msg; a.className = 'form-alert ' + type; a.style.display = 'block';
+    a.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+}
+
+// ── HERO QUICK FORM ───────────────────────────────────
+document.getElementById('heroQuoteForm').addEventListener('submit', e => {
+    e.preventDefault();
+    const name  = document.getElementById('hqName').value.trim();
+    const phone = document.getElementById('hqPhone').value.trim();
+    if (!name || !phone) return;
+    // Scroll to full multi-step form
+    document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
+    // Pre-fill step 3
+    document.getElementById('s3Name').value  = name;
+    document.getElementById('s3Phone').value = phone;
+    const svc = document.getElementById('hqService').value;
+    if (svc) {
+        document.querySelectorAll('.service-tile').forEach(t => {
+            if (t.dataset.service && svc.includes(t.dataset.service)) {
+                t.classList.add('selected'); selectedServices.add(t.dataset.service);
+            }
+        });
+    }
+    setTimeout(() => goToStep(3), 800);
+});
+</script>
+<script type="module" src="firebase-cms.js"></script>
 </body>
 </html>

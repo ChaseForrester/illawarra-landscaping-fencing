@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Illawarra Landscaping Admin Dashboard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .admin-container { max-width: 800px; margin: 4rem auto; padding: 2rem; background: #fff; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); }
+        .form-group { margin-bottom: 1.5rem; }
+        .form-group label { display: block; margin-bottom: 0.5rem; font-weight: 600; }
+        .form-group input { width: 100%; padding: 0.8rem; border: 1px solid #ddd; border-radius: 6px; font-family: inherit; }
+        #dashboard { display: none; }
+    </style>
+</head>
+<body style="background: #f4f7f6;">
+    <div class="admin-container">
+        <!-- Login Section -->
+        <div id="login-section">
+            <h2 class="title" style="color: var(--primary);">Admin Login</h2>
+            <form id="login-form">
+                <div class="form-group">
+                    <label>Email</label>
+                    <input type="email" id="email" required>
+                </div>
+                <div class="form-group">
+                    <label>Password</label>
+                    <input type="password" id="password" required>
+                </div>
+                <button type="submit" class="btn btn-green">Login</button>
+            </form>
+            <p id="login-error" style="color: red; margin-top: 1rem;"></p>
+        </div>
+
+        <!-- Dashboard Section -->
+        <div id="dashboard">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2rem;">
+                <h2 class="title" style="color: var(--primary);">CMS Dashboard</h2>
+                <button id="logout-btn" class="btn btn-outline">Logout</button>
+            </div>
+            
+            <form id="cms-form">
+                <div class="form-group">
+                    <label>Hero Title (HTML allowed)</label>
+                    <input type="text" id="heroTitle" placeholder="Let us bring life to your <span class='accent'>garden</span>">
+                </div>
+                <div class="form-group">
+                    <label>Hero Subtitle</label>
+                    <input type="text" id="heroSubtitle" placeholder="Premium landscaping, fencing & garden design across Wollongong, Shellharbour & Kiama.">
+                </div>
+                <div class="form-group">
+                    <label>Phone Number</label>
+                    <input type="text" id="phoneNumber" placeholder="0456 299 538">
+                </div>
+                <button type="submit" class="btn btn-orange">Save Changes</button>
+            </form>
+            <p id="save-status" style="color: green; margin-top: 1rem;"></p>
+        </div>
+    </div>
+    <script type="module" src="admin.js"></script>
+</body>
+</html>
