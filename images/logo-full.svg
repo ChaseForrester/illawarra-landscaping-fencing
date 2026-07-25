@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 72" role="img" aria-label="Illawarra Landscaping & Fencing">
+  <defs>
+    <linearGradient id="markGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1E4D35"/>
+      <stop offset="100%" stop-color="#143524"/>
+    </linearGradient>
+  </defs>
+  <!-- Mark -->
+  <rect x="0" y="6" width="60" height="60" rx="13" fill="url(#markGrad)"/>
+  <rect x="13" y="32" width="4.5" height="20" rx="1.2" fill="#E8930D"/>
+  <rect x="27.75" y="26" width="4.5" height="26" rx="1.2" fill="#E8930D"/>
+  <rect x="42.5" y="32" width="4.5" height="20" rx="1.2" fill="#E8930D"/>
+  <rect x="11" y="37" width="38" height="3.2" rx="1.2" fill="#F5A623"/>
+  <rect x="11" y="45.5" width="38" height="3.2" rx="1.2" fill="#F5A623"/>
+  <path d="M38 16c7.5 1.8 11 9 9.2 14.5-5.5-1-11-6.2-9.2-14.5z" fill="#FEF3E0"/>
+
+  <!-- Wordmark -->
+  <text x="76" y="34" font-family="Outfit, Arial, Helvetica, sans-serif" font-size="24" font-weight="800" fill="#1A1A1A" letter-spacing="0.5">ILLAWARRA</text>
+  <text x="76" y="54" font-family="Outfit, Arial, Helvetica, sans-serif" font-size="13" font-weight="600" fill="#1E4D35" letter-spacing="1.8">LANDSCAPING &amp; FENCING</text>
+  <!-- Accent bar under brand name -->
+  <rect x="76" y="60" width="42" height="3" rx="1.5" fill="#E8930D"/>
+</svg>
