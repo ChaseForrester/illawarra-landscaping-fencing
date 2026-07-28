@@ -15,20 +15,62 @@ if (header) {
 }
 
 // ── MOBILE NAV ───────────────────────────────────────
-const hamburger = document.getElementById('hamburger');
-const navMenu   = document.getElementById('navMenu');
-if (hamburger && navMenu) {
-    hamburger.addEventListener('click', () => {
-        navMenu.classList.toggle('open');
-        hamburger.classList.toggle('open');
+// Simple in-header dropdown — toggles .open on #navMenu / #hamburger.
+(function initMobileNav() {
+    const hamburger = document.getElementById('hamburger');
+    const navMenu   = document.getElementById('navMenu');
+    const header    = document.getElementById('mainHeader');
+    if (!hamburger || !navMenu) return;
+
+    const MOBILE_MAX = 1100;
+    let isOpen = false;
+
+    const setNavOpen = (open) => {
+        isOpen = !!open && window.innerWidth <= MOBILE_MAX;
+        navMenu.classList.toggle('open', isOpen);
+        hamburger.classList.toggle('open', isOpen);
+        document.body.classList.toggle('nav-open', isOpen);
+        if (header) header.classList.toggle('nav-open-header', isOpen);
+        hamburger.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+        hamburger.setAttribute('aria-label', isOpen ? 'Close menu' : 'Open menu');
+    };
+
+    hamburger.setAttribute('aria-controls', 'navMenu');
+    hamburger.setAttribute('aria-expanded', 'false');
+    if (!hamburger.getAttribute('type')) hamburger.setAttribute('type', 'button');
+
+    hamburger.addEventListener('click', (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        setNavOpen(!isOpen);
     });
-    navMenu.querySelectorAll('.nav-link').forEach(l =>
-        l.addEventListener('click', () => {
-            navMenu.classList.remove('open');
-            hamburger.classList.remove('open');
-        })
-    );
-}
+
+    const clickCloseTarget = header || navMenu;
+    clickCloseTarget.querySelectorAll('a').forEach((link) => {
+        link.addEventListener('click', () => setNavOpen(false));
+    });
+
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && isOpen) {
+            setNavOpen(false);
+            hamburger.focus();
+        }
+    });
+
+    document.addEventListener('click', (e) => {
+        if (!isOpen) return;
+        if (header && header.contains(e.target)) return;
+        setNavOpen(false);
+    });
+
+    let resizeTimer;
+    window.addEventListener('resize', () => {
+        clearTimeout(resizeTimer);
+        resizeTimer = setTimeout(() => {
+            if (window.innerWidth > MOBILE_MAX) setNavOpen(false);
+        }, 100);
+    });
+})();
 
 // ── HERO SLIDESHOW ───────────────────────────────────
 function initSlideshow() {
